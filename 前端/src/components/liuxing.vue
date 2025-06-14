@@ -1,0 +1,164 @@
+<template>
+    <div>
+  <div class="liuxing liuxing1 liuxingFla"></div>
+		<div class="liuxing liuxing2 liuxingFla2"></div>
+		<div class="liuxing liuxing3 liuxingFla3"></div>
+		<div class="liuxing liuxing4 liuxingFla4"></div>
+</div>
+</template>
+
+<script>
+export default {
+name: 'LiuXing'
+}
+</script>
+
+<style>
+/* CSS Document */
+/**
+* +----------------------------------------------------------
+* 主样式
+* +----------------------------------------------------------
+*/
+.layui-form-checkbox[lay-skin=primary]:hover i{
+  border-color: #407CD5;
+}
+.layui-form-checked[lay-skin=primary] i{
+  background-color: #407CD5;
+  border-color: #407CD5;
+}
+
+.layui-btn{
+    height: 45px;
+    line-height: 45px;
+}
+.layui-btn-normal{
+  background-color: #407CD5;
+}
+
+
+/*流星*/
+.liuxing{
+  width: 85px;
+	height: 85px;
+	position: absolute;
+	background: url(@/assets/loginimg/login/line.png) no-repeat;
+	background-size: contain;
+}
+.liuxing1 {
+  top: 200px;
+	left: 200px;
+}
+
+.liuxing2 {
+  top: 200px;
+	left: 50%;
+	margin-left: 200px;
+}
+
+.liuxing3 {
+  top: 100px;
+	right: 300px;
+}
+
+.liuxing4 {
+  top: 150px;
+	right: 300px;
+}
+
+.liuxingFla {
+	animation: liuxing 5s ease-in infinite;
+}
+
+.liuxingFla2 {
+	animation: liuxing2 4s ease-in infinite;
+}
+
+.liuxingFla3 {
+	animation: liuxing3 3s linear infinite;
+}
+
+.liuxingFla4 {
+	animation: liuxing4 2s linear infinite;
+}
+
+/* 流星动画 */
+@keyframes liuxing {
+	0% {
+		transform: translate(200px, -200px)
+	}
+	90% {
+		transform: translate(-180px, 180px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-200px, 200px);
+		opacity: 0;
+	}
+}
+
+@keyframes liuxing2 {
+	0% {
+		transform: translate(200px, -200px)
+	}
+	90% {
+		transform: translate(-480px, 480px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-500px, 500px);
+		opacity: 0;
+	}
+}
+
+@keyframes liuxing3 {
+	0% {
+		transform: translate(200px, -200px)
+	}
+	90% {
+		transform: translate(-480px, 480px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-500px, 500px);
+		opacity: 0;
+	}
+}
+
+@keyframes liuxing4 {
+	0% {
+		transform: translate(200px, -200px)
+	}
+	90% {
+		transform: translate(-180px, 180px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-200px, 200px);
+		opacity: 0;
+	}
+}
+
+/*菜单*/
+.moveUpDownFla1 {
+	animation: moveUpDown 5s ease infinite;
+}
+
+.moveUpDownFla2 {
+	animation: moveUpDown 4s linear infinite;
+}
+
+/* 菜单动画 */
+@keyframes moveUpDown {
+	0% {
+		transform: translate(0px, -20px)
+	}
+	50% {
+		transform: translate(0px, 20px)
+	}
+	100% {
+		transform: translate(0px, -20px);
+	}
+}
+
+</style>
